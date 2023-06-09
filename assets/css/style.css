@@ -1,0 +1,137 @@
+ul, ol {
+  background: #fffcf4;
+  border-radius :10px;/*角の丸み*/
+  box-shadow :5px 5px 5px silver;/*5px=影の広がり具合*/
+  /* padding: 1em 10em 0.5em 10em; */
+}
+ul li, ol li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+h2 {
+  font-size: 170%; /* 画面幅の5%のフォントサイズ */
+}
+/*\\\\\\\\\\\\\\\\\\\\\\*/
+body {
+  color: rgb(53, 153, 162);
+  background-color: rgba(255, 255, 0, 0.283);
+}
+        /* 目次のスタイル */
+#toc {
+  list-style-type: none;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 50px;
+}
+#toc h2{
+  text-align: center;
+}
+#toc li {
+  margin: 0px 0;
+  text-align: center;
+  padding-left: 0%;
+  font-size: large;
+}
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+   } 
+.title {
+    text-align: center;
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .main-section {
+    text-align: center; /* 中央揃え */
+  }
+  .main-section img {
+    width: 100%; /* 画面幅に合わせてサイズ調整 */
+    max-width: 800px; /* 最大幅を指定 */
+    height: 800px; /* 高さは自動調整 */
+    }
+  .ramen{
+    width: 100%; /* 画面幅に合わせてサイズ調整 */
+    max-width: 800px; /* 最大幅を指定 */
+    height: 800px; /* 高さは自動調整 */
+    
+  position: relative;
+  left: -100%;
+  animation: slide-in-animation 6s forwards;
+}
+    @keyframes slide-in-animation {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 0;
+      }
+    }
+  .main-section .caption {
+    margin-top: 20px; /* 上側の余白 */
+    margin-bottom: 20px; /* 下側の余白 */
+  }
+.line-container {
+  width: 100%;
+  height: 1px;
+  overflow: hidden;
+}
+.line {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #01f801 0%, #02f527 50%, #03f803 100%);
+  animation: lineAnimation 2s ease-in-out infinite alternate;
+}
+@keyframes lineAnimation {
+0% {
+  transform: scaleX(0);
+}
+100% {
+  transform: scaleX(1);
+}
+}
+.footer02 {
+  color: #808080;
+  background: #e5e5e5;
+  text-align: center;
+  padding: 30px;
+ }
+ .footer02 a {
+  color: #808080;
+  text-decoration: none;
+ }
+ .footer02 a:hover {
+  text-decoration: underline;
+ }
+ .footer02 .menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ .footer02 .menu li {
+  margin: 0;
+  padding: 0 20px;
+ }
+ .footer02 .copyright {
+  margin: 0;
+  padding: 20px 0 0 0;
+ }
+ .container {
+  width: 100%;
+}
+.container img,
+.container p {
+  width: 50%;
+}
+a{
+  text-decoration: none;
+}
